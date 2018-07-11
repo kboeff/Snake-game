@@ -8,3 +8,7 @@ Part of <strong>Coding Challenge #7</strong> from the <a href="https://github.co
 <ul>
   <li>kbo/kboeff</li>
 <ul>
+
+
+# Update 1
+Added the basic code from Cris DeLeon of Gamkedo: https://www.youtube.com/watch?v=xGmXxpIj6vs&t=208s
