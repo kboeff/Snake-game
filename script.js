@@ -37,9 +37,15 @@ const game = () => {
 	
 	ctx.fillStyle = "lime";
 	for (var i = 0; i < trail.length; i++) {
-		ctx.fillRect(trail[i].x * gridSize, trail[i].y * gridSize, gridSize-2, gridSize-2);
+		ctx.beginPath();
+		ctx.arc(trail[i].x * gridSize, trail[i].y * gridSize, 9, 0, 2 * Math.PI);
+		ctx.fill();
 		if (trail[i].x == posX && trail[i].y == posY) {
 			tail = 5;
+			if (xv !== 0 && yv !== 0) {
+				ctx.fillStyle="red";
+				ctx.fillRect(0,0,canvas.width,canvas.height);
+			}
 		}
 	}
 	
@@ -49,13 +55,17 @@ const game = () => {
 	}
 	
 	if (appX === posX && appY === posY) {
+			ctx.fillStyle="green";
+			ctx.fillRect(0,0,canvas.width,canvas.height);
 			tail++;
 			appX = Math.floor(Math.random() * tileCount);
 			appY = Math.floor(Math.random() * tileCount);
 	}
 	
 	ctx.fillStyle = "white";
-	ctx.fillRect(appX * gridSize, appY * gridSize, gridSize-2, gridSize-2);
+	ctx.beginPath();
+	ctx.arc(appX * gridSize, appY * gridSize, 10, 0, 2 * Math.PI);
+	ctx.fill();
 }
 const keyPush = (event) => {
 	
