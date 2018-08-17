@@ -11,4 +11,4 @@ Part of <strong>Coding Challenge #7</strong> from the <a href="https://github.co
 
 
 # Update 1
-Added the basic code from Cris DeLeon of Gamkedo: https://www.youtube.com/watch?v=xGmXxpIj6vs&t=208s
+Added the basic code from https://www.youtube.com/watch?v=xGmXxpIj6vs&t=208s
